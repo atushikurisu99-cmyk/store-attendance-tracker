@@ -30,8 +30,8 @@
   "kagayaki": [
     {
       "date": "2026-07-16",
-      "attendance": null,
-      "newface": null
+      "attendance": 14,
+      "newface": 0
     }
   ],
   "elegansssssssss": [
@@ -67,6 +67,20 @@
       "date": "2026-07-16",
       "attendance": null,
       "newface": null
+    }
+  ],
+  "dousoukai": [
+    {
+      "date": "2026-07-16",
+      "attendance": 19,
+      "newface": 0
+    }
+  ],
+  "gokinnyjo": [
+    {
+      "date": "2026-07-16",
+      "attendance": 16,
+      "newface": 4
     }
   ]
 }

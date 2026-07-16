@@ -3,30 +3,42 @@
     "name": "ELEGANCE(エレガンス)",
     "attendance": 18,
     "newface": 2,
-    "updated_at": "2026-07-16T23:25:32"
+    "updated_at": "2026-07-16T23:40:49"
   },
   "hiroshimacoco": {
     "name": "広島で評判のお店はココです！",
     "attendance": 35,
     "newface": 0,
-    "updated_at": "2026-07-16T23:25:32"
+    "updated_at": "2026-07-16T23:40:49"
   },
   "idollovemachine": {
     "name": "ラブマシーン広島",
     "attendance": 19,
     "newface": 0,
-    "updated_at": "2026-07-16T23:25:32"
+    "updated_at": "2026-07-16T23:40:49"
   },
   "rush47": {
     "name": "RUSH-ラッシュ-",
     "attendance": 19,
     "newface": 6,
-    "updated_at": "2026-07-16T23:25:32"
+    "updated_at": "2026-07-16T23:40:49"
   },
-  "TODO_kagayaki": {
-    "name": "煌き-KIRAMEKI-",
-    "attendance": null,
-    "newface": null,
-    "updated_at": "2026-07-16T23:25:32"
+  "kagayaki": {
+    "name": "煌き-KIRAMEKI-【煌きグループ】",
+    "attendance": 14,
+    "newface": 0,
+    "updated_at": "2026-07-16T23:40:49"
+  },
+  "dousoukai": {
+    "name": "人妻同窓会『信頼の証ヴィーナスグループ』",
+    "attendance": 19,
+    "newface": 0,
+    "updated_at": "2026-07-16T23:40:49"
+  },
+  "gokinnyjo": {
+    "name": "ご近所物語",
+    "attendance": 16,
+    "newface": 4,
+    "updated_at": "2026-07-16T23:40:49"
   }
 }
