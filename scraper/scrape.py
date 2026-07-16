@@ -42,6 +42,24 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
 
+DEFAULT_HEADERS = {
+    "User-Agent": USER_AGENT,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+}
+
+# Cookieを保持しつつ、店舗トップページを経由してから下位ページに
+# アクセスすることでブラウザの遷移に近づけるため、セッションを使い回す。
+SESSION = requests.Session()
+SESSION.headers.update(DEFAULT_HEADERS)
+
 REQUEST_TIMEOUT = 15
 MAX_RETRIES = 3
 
@@ -51,12 +69,14 @@ def load_stores():
         return json.load(f)["stores"]
 
 
-def fetch(url: str) -> str | None:
+def fetch(url: str, referer: str | None = None) -> str | None:
     """簡易リトライ付きGET。失敗時はNoneを返す(その店舗はスキップ)。"""
-    headers = {"User-Agent": USER_AGENT, "Accept-Language": "ja,en;q=0.8"}
+    headers = {}
+    if referer:
+        headers["Referer"] = referer
     for attempt in range(MAX_RETRIES):
         try:
-            resp = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
+            resp = SESSION.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
             print(f"  GET {url} -> status={resp.status_code} len={len(resp.text)}", file=sys.stderr)
             if resp.status_code == 200:
                 return resp.text
@@ -152,9 +172,11 @@ def main():
         slug = store["slug"]
         attend_url, newface_url = build_store_urls(store)
 
+        # 店舗トップページをまず見てから下位ページへ、というブラウザの自然な
+        # 遷移順に近づける(Cookie取得も兼ねる)。
         html_attend = fetch(attend_url)
         time.sleep(random.uniform(1, 2))  # 店舗内の2ページ取得の間にも間隔を空ける
-        html_newface = fetch(newface_url)
+        html_newface = fetch(newface_url, referer=attend_url)
 
         attendance = count_today_attendance(html_attend)
         newface = count_recent_newface(html_newface)
@@ -162,24 +184,3 @@ def main():
         record = {"date": today_str, "attendance": attendance, "newface": newface}
         history.setdefault(slug, [])
         # 同日分がすでにあれば上書き(1日3回実行のうち最新を反映)
-        history[slug] = [r for r in history[slug] if r["date"] != today_str]
-        history[slug].append(record)
-
-        latest[slug] = {
-            "name": store["name"],
-            "attendance": attendance,
-            "newface": newface,
-            "updated_at": datetime.now().isoformat(timespec="seconds"),
-        }
-
-        print(f"[{slug}] attendance={attendance} newface={newface}", file=sys.stderr)
-
-        # 次の店舗までランダムインターバル(1〜2秒)
-        time.sleep(random.uniform(1, 2))
-
-    save_json(HISTORY_PATH, history)
-    save_json(LATEST_PATH, latest)
-
-
-if __name__ == "__main__":
-    main()
