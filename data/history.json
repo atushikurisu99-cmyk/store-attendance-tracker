@@ -33,5 +33,40 @@
       "attendance": null,
       "newface": null
     }
+  ],
+  "elegansssssssss": [
+    {
+      "date": "2026-07-16",
+      "attendance": 18,
+      "newface": 2
+    }
+  ],
+  "hiroshimacoco": [
+    {
+      "date": "2026-07-16",
+      "attendance": 35,
+      "newface": 0
+    }
+  ],
+  "idollovemachine": [
+    {
+      "date": "2026-07-16",
+      "attendance": 19,
+      "newface": 0
+    }
+  ],
+  "rush47": [
+    {
+      "date": "2026-07-16",
+      "attendance": 19,
+      "newface": 6
+    }
+  ],
+  "TODO_kagayaki": [
+    {
+      "date": "2026-07-16",
+      "attendance": null,
+      "newface": null
+    }
   ]
 }
