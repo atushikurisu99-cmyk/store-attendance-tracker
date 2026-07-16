@@ -162,6 +162,7 @@ def save_json(path: Path, data):
 
 def main():
     stores = load_stores()
+    print(f"Loaded {len(stores)} stores: {[s['slug'] for s in stores]}", file=sys.stderr, flush=True)
     random.shuffle(stores)  # アクセス順序をランダム化
 
     today_str = datetime.now().strftime("%Y-%m-%d")
@@ -171,6 +172,7 @@ def main():
     for store in stores:
         slug = store["slug"]
         attend_url, newface_url = build_store_urls(store)
+        print(f"[{slug}] starting: {attend_url}", file=sys.stderr, flush=True)
 
         # 店舗トップページをまず見てから下位ページへ、というブラウザの自然な
         # 遷移順に近づける(Cookie取得も兼ねる)。
@@ -184,3 +186,30 @@ def main():
         record = {"date": today_str, "attendance": attendance, "newface": newface}
         history.setdefault(slug, [])
         # 同日分がすでにあれば上書き(1日3回実行のうち最新を反映)
+        history[slug] = [r for r in history[slug] if r["date"] != today_str]
+        history[slug].append(record)
+
+        latest[slug] = {
+            "name": store["name"],
+            "attendance": attendance,
+            "newface": newface,
+            "updated_at": datetime.now().isoformat(timespec="seconds"),
+        }
+
+        print(f"[{slug}] attendance={attendance} newface={newface}", file=sys.stderr, flush=True)
+
+        # 次の店舗までランダムインターバル(1〜2秒)
+        time.sleep(random.uniform(1, 2))
+
+    save_json(HISTORY_PATH, history)
+    save_json(LATEST_PATH, latest)
+
+
+if __name__ == "__main__":
+    print(f"Python: {sys.version}", file=sys.stderr, flush=True)
+    try:
+        main()
+    except Exception:
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
