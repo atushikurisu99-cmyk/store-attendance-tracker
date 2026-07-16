@@ -57,6 +57,7 @@ def fetch(url: str) -> str | None:
     for attempt in range(MAX_RETRIES):
         try:
             resp = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
+            print(f"  GET {url} -> status={resp.status_code} len={len(resp.text)}", file=sys.stderr)
             if resp.status_code == 200:
                 return resp.text
             if resp.status_code in (403, 429):
@@ -64,7 +65,8 @@ def fetch(url: str) -> str | None:
                 time.sleep(5 * (attempt + 1))
                 continue
             return None
-        except requests.RequestException:
+        except requests.RequestException as e:
+            print(f"  GET {url} -> exception: {e}", file=sys.stderr)
             time.sleep(3 * (attempt + 1))
     return None
 
@@ -88,6 +90,7 @@ def count_today_attendance(html: str) -> int | None:
         m = re.search(r"/girlid-(\d+)/", a.get("href", ""))
         if m:
             unique_ids.add(m.group(1))
+    print(f"    -> found {len(today_links)} girlid links, {len(unique_ids)} unique", file=sys.stderr)
     return len(unique_ids) if unique_ids else None
 
 
