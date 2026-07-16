@@ -1,0 +1,41 @@
+name: Scrape store attendance
+
+on:
+  schedule:
+    # cronはUTC基準。JSTの10:00 / 17:00 / 23:00 に相当する時刻を指定。
+    - cron: "0 1 * * *"   # JST 10:00
+    - cron: "0 8 * * *"   # JST 17:00
+    - cron: "0 14 * * *"  # JST 23:00
+  workflow_dispatch: {}   # 手動実行用(疎通確認時に使う)
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Random delay (0-5 min)
+        run: |
+          DELAY=$((RANDOM % 300))
+          echo "Waiting ${DELAY}s before starting..."
+          sleep "$DELAY"
+
+      - name: Run scraper
+        run: python scraper/scrape.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "store-attendance-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "chore: update attendance data ($(date '+%Y-%m-%d %H:%M'))"
+          git push
