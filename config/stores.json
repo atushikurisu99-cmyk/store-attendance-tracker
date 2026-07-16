@@ -1,9 +1,10 @@
 {
+  "area_listing_url": "https://fuzoku.jp/hiroshima/a_5001/biz_4/",
   "stores": [
-    { "slug": "elegance", "name": "ELEGANCE(エレガンス)", "area": "hiroshima/A3401/A340101" },
-    { "slug": "hiroshima_hyoban", "name": "【人妻デリヘル】広島で評判のお店はココです！", "area": "hiroshima/A3401/A340101" },
-    { "slug": "kagayaki", "name": "煌き-KIRAMEKI-【煌きグループ】", "area": "hiroshima/A3401/A340101" },
-    { "slug": "lovemachine", "name": "ラブマシーン広島 [ラブマシーングループ]", "area": "hiroshima/A3401/A340101" },
-    { "slug": "rush", "name": "RUSH (RUSH ラッシュグループ)", "area": "hiroshima/A3401/A340101" }
+    { "fuzoku_slug": "elegansssssssss", "name": "ELEGANCE(エレガンス)" },
+    { "fuzoku_slug": "hiroshimacoco", "name": "広島で評判のお店はココです！" },
+    { "fuzoku_slug": "idollovemachine", "name": "ラブマシーン広島" },
+    { "fuzoku_slug": "rush47", "name": "RUSH-ラッシュ-" },
+    { "fuzoku_slug": "TODO_kagayaki", "name": "煌き-KIRAMEKI-" }
   ]
 }
