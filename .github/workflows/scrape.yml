@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "store-attendance-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/
+          git add docs/data/
           git diff --cached --quiet || git commit -m "chore: update attendance data ($(date '+%Y-%m-%d %H:%M'))"
           git pull --rebase origin main
           git push
