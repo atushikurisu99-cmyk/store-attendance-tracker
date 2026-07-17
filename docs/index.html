@@ -25,6 +25,10 @@
   * { box-sizing: border-box; }
   html, body {
     margin: 0; padding: 0;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
     background: var(--bg);
     color: var(--text);
     font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
@@ -209,8 +213,8 @@
 </div>
 
 <script>
-const DATA_LATEST_URL = "../data/latest.json";
-const DATA_HISTORY_URL = "../data/history.json";
+const DATA_LATEST_URL = "data/latest.json";
+const DATA_HISTORY_URL = "data/history.json";
 
 let historyData = {};
 let latestData = {};
