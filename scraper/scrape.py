@@ -37,7 +37,7 @@ from bs4 import BeautifulSoup
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 CONFIG_PATH = BASE_DIR / "config" / "stores.json"
-DATA_DIR = BASE_DIR / "data"
+DATA_DIR = BASE_DIR / "docs" / "data"
 HISTORY_PATH = DATA_DIR / "history.json"
 LATEST_PATH = DATA_DIR / "latest.json"
 
@@ -168,7 +168,7 @@ def main():
             "updated_at": datetime.now().isoformat(timespec="seconds"),
         }
 
-        print(f"[{slug}] attendance={attendance} newface={newface}", file=sys.stderr, flush=True)
+        print(f"[{store['name']}] attendance={attendance} newface={newface}", file=sys.stderr, flush=True)
 
     save_json(HISTORY_PATH, history)
     save_json(LATEST_PATH, latest)
