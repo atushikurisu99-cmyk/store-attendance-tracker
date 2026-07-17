@@ -102,9 +102,11 @@
     border-right: 1px solid var(--hairline);
     overflow-y: auto;
     background: var(--panel);
+    padding-left: env(safe-area-inset-left);
   }
   header {
     padding: 20px 22px 14px;
+    padding-left: max(22px, env(safe-area-inset-left));
     display: flex;
     align-items: center;
     gap: 10px;
@@ -145,6 +147,14 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .edit-name-btn {
+    display: inline-block;
+    margin-left: 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .edit-name-btn:hover { opacity: 1; }
   .sparkline { display: block; margin-top: 6px; }
 
   .store-row-stat { text-align: right; flex-shrink: 0; }
@@ -256,10 +266,34 @@ function pushNotification(title, body) {
 function checkNotifications() {
   Object.entries(latestData).forEach(([slug, info]) => {
     if (info.newface != null && info.newface >= 3) {
-      pushNotification(info.name, `新人急増を検知(直近7日で${info.newface}人)`);
+      pushNotification(getDisplayName(slug, info.name), `新人急増を検知(直近7日で${info.newface}人)`);
     }
   });
   // 新店舗追加通知は、全店舗パトロール機能の実装後に接続する想定(未実装)。
+}
+
+function getDisplayName(slug, fallbackName) {
+  try {
+    const overrides = JSON.parse(localStorage.getItem("storeNameOverrides") || "{}");
+    return overrides[slug] || fallbackName;
+  } catch (e) {
+    return fallbackName;
+  }
+}
+
+function editStoreName(slug) {
+  const current = getDisplayName(slug, latestData[slug]?.name || "");
+  const next = window.prompt("表示名を編集", current);
+  if (next === null || next.trim() === "") return;
+  try {
+    const overrides = JSON.parse(localStorage.getItem("storeNameOverrides") || "{}");
+    overrides[slug] = next.trim();
+    localStorage.setItem("storeNameOverrides", JSON.stringify(overrides));
+  } catch (e) {
+    console.error("failed to save name override", e);
+  }
+  renderList();
+  selectStore(slug);
 }
 
 function renderList() {
@@ -270,16 +304,24 @@ function renderList() {
     row.className = "store-row";
     row.dataset.slug = slug;
     const d = diffLabel(slug);
+    const displayName = getDisplayName(slug, info.name);
     row.innerHTML = `
       <div class="store-row-main">
-        <span class="store-name">${info.name}</span>
+        <span class="store-name">${displayName}</span><span class="edit-name-btn" data-slug="${slug}">✏️</span>
       </div>
       <div class="store-row-stat">
         <span class="store-count num">${info.attendance ?? "―"}<span class="unit">人</span></span>
         <span class="diff num ${d.cls}">${d.text}</span>
       </div>
     `;
-    row.addEventListener("click", () => selectStore(slug));
+    row.addEventListener("click", (e) => {
+      if (e.target.classList.contains("edit-name-btn")) return;
+      selectStore(slug);
+    });
+    row.querySelector(".edit-name-btn").addEventListener("click", (e) => {
+      e.stopPropagation();
+      editStoreName(slug);
+    });
     listEl.appendChild(row);
   });
 }
@@ -324,7 +366,7 @@ function selectStore(slug) {
   if (target) target.classList.add("active");
 
   const info = latestData[slug];
-  document.getElementById("detail-title").textContent = info ? info.name : slug;
+  document.getElementById("detail-title").textContent = info ? getDisplayName(slug, info.name) : slug;
   document.getElementById("detail-sub").textContent = info
     ? `最終更新 ${info.updated_at ?? "―"}`
     : "";
