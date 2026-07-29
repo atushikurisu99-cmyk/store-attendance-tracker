@@ -63,7 +63,7 @@
     {
       "date": "2026-07-29",
       "attendance": 26,
-      "newface": 2
+      "newface": 4
     }
   ],
   "hiroshimacoco": [
@@ -196,7 +196,7 @@
     },
     {
       "date": "2026-07-29",
-      "attendance": 16,
+      "attendance": 17,
       "newface": 4
     }
   ],
@@ -264,7 +264,7 @@
     {
       "date": "2026-07-29",
       "attendance": 24,
-      "newface": 2
+      "newface": 0
     }
   ],
   "kagayaki": [
@@ -397,7 +397,7 @@
     },
     {
       "date": "2026-07-29",
-      "attendance": 15,
+      "attendance": 16,
       "newface": 0
     }
   ],
@@ -464,8 +464,8 @@
     },
     {
       "date": "2026-07-29",
-      "attendance": 21,
-      "newface": 2
+      "attendance": 20,
+      "newface": 4
     }
   ]
 }
