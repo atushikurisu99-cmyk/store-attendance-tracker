@@ -107,8 +107,8 @@
     },
     {
       "date": "2026-08-07",
-      "attendance": 22,
-      "newface": 6
+      "attendance": 21,
+      "newface": 2
     }
   ],
   "hiroshimacoco": [
@@ -219,7 +219,7 @@
     },
     {
       "date": "2026-08-07",
-      "attendance": 33,
+      "attendance": 34,
       "newface": 0
     }
   ],
@@ -443,7 +443,7 @@
     },
     {
       "date": "2026-08-07",
-      "attendance": 25,
+      "attendance": 23,
       "newface": 2
     }
   ],
@@ -555,7 +555,7 @@
     },
     {
       "date": "2026-08-07",
-      "attendance": 10,
+      "attendance": 12,
       "newface": 0
     }
   ],
@@ -779,8 +779,8 @@
     },
     {
       "date": "2026-08-07",
-      "attendance": 27,
-      "newface": 2
+      "attendance": 28,
+      "newface": 6
     }
   ]
 }
