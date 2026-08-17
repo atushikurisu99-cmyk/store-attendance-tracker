@@ -157,7 +157,7 @@
     },
     {
       "date": "2026-08-17",
-      "attendance": 10,
+      "attendance": 11,
       "newface": 2
     }
   ],
@@ -481,7 +481,7 @@
     },
     {
       "date": "2026-08-17",
-      "attendance": 11,
+      "attendance": 12,
       "newface": 6
     }
   ],
@@ -643,7 +643,7 @@
     },
     {
       "date": "2026-08-17",
-      "attendance": 13,
+      "attendance": 14,
       "newface": 2
     }
   ],
@@ -805,7 +805,7 @@
     },
     {
       "date": "2026-08-17",
-      "attendance": 6,
+      "attendance": 7,
       "newface": 0
     }
   ],
@@ -1130,7 +1130,7 @@
     {
       "date": "2026-08-17",
       "attendance": 13,
-      "newface": 4
+      "newface": 2
     }
   ]
 }
