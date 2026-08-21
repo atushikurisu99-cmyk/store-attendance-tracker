@@ -541,8 +541,8 @@
     },
     {
       "date": "2026-08-21",
-      "attendance": 24,
-      "newface": 4
+      "attendance": 23,
+      "newface": 2
     }
   ],
   "rush47": [
@@ -1270,7 +1270,7 @@
     {
       "date": "2026-08-21",
       "attendance": 19,
-      "newface": 4
+      "newface": 6
     }
   ]
 }
