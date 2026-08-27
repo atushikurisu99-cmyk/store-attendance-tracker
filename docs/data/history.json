@@ -207,7 +207,7 @@
     },
     {
       "date": "2026-08-27",
-      "attendance": 14,
+      "attendance": 22,
       "newface": 2
     }
   ],
@@ -419,7 +419,7 @@
     },
     {
       "date": "2026-08-27",
-      "attendance": 31,
+      "attendance": 26,
       "newface": 0
     }
   ],
@@ -631,7 +631,7 @@
     },
     {
       "date": "2026-08-27",
-      "attendance": 15,
+      "attendance": 24,
       "newface": 2
     }
   ],
@@ -843,7 +843,7 @@
     },
     {
       "date": "2026-08-27",
-      "attendance": 16,
+      "attendance": 22,
       "newface": 2
     }
   ],
@@ -1055,7 +1055,7 @@
     },
     {
       "date": "2026-08-27",
-      "attendance": 14,
+      "attendance": 11,
       "newface": 0
     }
   ],
@@ -1267,7 +1267,7 @@
     },
     {
       "date": "2026-08-27",
-      "attendance": 12,
+      "attendance": 16,
       "newface": 0
     }
   ],
@@ -1479,8 +1479,8 @@
     },
     {
       "date": "2026-08-27",
-      "attendance": 20,
-      "newface": 2
+      "attendance": 16,
+      "newface": 8
     }
   ]
 }
