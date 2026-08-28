@@ -212,8 +212,8 @@
     },
     {
       "date": "2026-08-28",
-      "attendance": 22,
-      "newface": 0
+      "attendance": 17,
+      "newface": 2
     }
   ],
   "hiroshimacoco": [
@@ -429,7 +429,7 @@
     },
     {
       "date": "2026-08-28",
-      "attendance": 26,
+      "attendance": 39,
       "newface": 0
     }
   ],
@@ -647,7 +647,7 @@
     {
       "date": "2026-08-28",
       "attendance": 17,
-      "newface": 2
+      "newface": 0
     }
   ],
   "rush47": [
@@ -863,7 +863,7 @@
     },
     {
       "date": "2026-08-28",
-      "attendance": 20,
+      "attendance": 23,
       "newface": 2
     }
   ],
@@ -1080,7 +1080,7 @@
     },
     {
       "date": "2026-08-28",
-      "attendance": 14,
+      "attendance": 9,
       "newface": 0
     }
   ],
@@ -1297,7 +1297,7 @@
     },
     {
       "date": "2026-08-28",
-      "attendance": 14,
+      "attendance": 20,
       "newface": 0
     }
   ],
@@ -1514,8 +1514,8 @@
     },
     {
       "date": "2026-08-28",
-      "attendance": 14,
-      "newface": 0
+      "attendance": 20,
+      "newface": 4
     }
   ]
 }
