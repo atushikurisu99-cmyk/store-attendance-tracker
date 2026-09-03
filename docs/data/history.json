@@ -242,7 +242,7 @@
     },
     {
       "date": "2026-09-03",
-      "attendance": 15,
+      "attendance": 16,
       "newface": 4
     }
   ],
@@ -1725,7 +1725,7 @@
     {
       "date": "2026-09-03",
       "attendance": 21,
-      "newface": 4
+      "newface": 0
     }
   ]
 }
