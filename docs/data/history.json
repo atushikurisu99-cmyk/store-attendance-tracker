@@ -264,6 +264,11 @@
       "date": "2026-09-07",
       "attendance": 24,
       "newface": 2
+    },
+    {
+      "date": "2026-09-08",
+      "attendance": 18,
+      "newface": 6
     }
   ],
   "hiroshimacoco": [
@@ -530,6 +535,11 @@
     {
       "date": "2026-09-07",
       "attendance": 28,
+      "newface": 0
+    },
+    {
+      "date": "2026-09-08",
+      "attendance": 36,
       "newface": 0
     }
   ],
@@ -798,6 +808,11 @@
       "date": "2026-09-07",
       "attendance": 16,
       "newface": 8
+    },
+    {
+      "date": "2026-09-08",
+      "attendance": 16,
+      "newface": 10
     }
   ],
   "rush47": [
@@ -1064,6 +1079,11 @@
     {
       "date": "2026-09-07",
       "attendance": 14,
+      "newface": 0
+    },
+    {
+      "date": "2026-09-08",
+      "attendance": 19,
       "newface": 0
     }
   ],
@@ -1332,6 +1352,11 @@
       "date": "2026-09-07",
       "attendance": 7,
       "newface": 0
+    },
+    {
+      "date": "2026-09-08",
+      "attendance": 4,
+      "newface": 0
     }
   ],
   "dousoukai": [
@@ -1598,6 +1623,11 @@
     {
       "date": "2026-09-07",
       "attendance": 16,
+      "newface": 0
+    },
+    {
+      "date": "2026-09-08",
+      "attendance": 17,
       "newface": 0
     }
   ],
@@ -1866,6 +1896,11 @@
       "date": "2026-09-07",
       "attendance": 18,
       "newface": 0
+    },
+    {
+      "date": "2026-09-08",
+      "attendance": 20,
+      "newface": 4
     }
   ]
 }
