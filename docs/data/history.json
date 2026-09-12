@@ -287,8 +287,8 @@
     },
     {
       "date": "2026-09-12",
-      "attendance": 26,
-      "newface": 6
+      "attendance": 25,
+      "newface": 4
     }
   ],
   "hiroshimacoco": [
@@ -871,8 +871,8 @@
     },
     {
       "date": "2026-09-12",
-      "attendance": 24,
-      "newface": 6
+      "attendance": 19,
+      "newface": 8
     }
   ],
   "rush47": [
@@ -1164,7 +1164,7 @@
     {
       "date": "2026-09-12",
       "attendance": 28,
-      "newface": 0
+      "newface": 2
     }
   ],
   "kagayaki": [
@@ -1747,7 +1747,7 @@
     },
     {
       "date": "2026-09-12",
-      "attendance": 13,
+      "attendance": 11,
       "newface": 0
     }
   ],
