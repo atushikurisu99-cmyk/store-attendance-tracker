@@ -599,7 +599,7 @@
     },
     {
       "date": "2026-09-14",
-      "attendance": 31,
+      "attendance": 30,
       "newface": 0
     }
   ],
@@ -901,8 +901,8 @@
     },
     {
       "date": "2026-09-14",
-      "attendance": 20,
-      "newface": 6
+      "attendance": 19,
+      "newface": 8
     }
   ],
   "rush47": [
@@ -1204,7 +1204,7 @@
     {
       "date": "2026-09-14",
       "attendance": 19,
-      "newface": 6
+      "newface": 2
     }
   ],
   "kagayaki": [
@@ -1505,7 +1505,7 @@
     },
     {
       "date": "2026-09-14",
-      "attendance": 15,
+      "attendance": 16,
       "newface": 0
     }
   ],
@@ -1807,7 +1807,7 @@
     },
     {
       "date": "2026-09-14",
-      "attendance": 9,
+      "attendance": 10,
       "newface": 0
     }
   ],
@@ -2109,7 +2109,7 @@
     },
     {
       "date": "2026-09-14",
-      "attendance": 17,
+      "attendance": 18,
       "newface": 0
     }
   ]
