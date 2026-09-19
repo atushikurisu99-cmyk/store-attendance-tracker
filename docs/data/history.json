@@ -976,8 +976,8 @@
     },
     {
       "date": "2026-09-19",
-      "attendance": 20,
-      "newface": 2
+      "attendance": 19,
+      "newface": 0
     }
   ],
   "rush47": [
@@ -1303,7 +1303,7 @@
     },
     {
       "date": "2026-09-19",
-      "attendance": 18,
+      "attendance": 19,
       "newface": 0
     }
   ],
@@ -1630,7 +1630,7 @@
     },
     {
       "date": "2026-09-19",
-      "attendance": 13,
+      "attendance": 14,
       "newface": 0
     }
   ],
@@ -1957,7 +1957,7 @@
     },
     {
       "date": "2026-09-19",
-      "attendance": 10,
+      "attendance": 9,
       "newface": 0
     }
   ],
@@ -2284,7 +2284,7 @@
     },
     {
       "date": "2026-09-19",
-      "attendance": 21,
+      "attendance": 20,
       "newface": 0
     }
   ]
