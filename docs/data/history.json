@@ -334,6 +334,11 @@
       "date": "2026-09-21",
       "attendance": 24,
       "newface": 4
+    },
+    {
+      "date": "2026-09-22",
+      "attendance": 26,
+      "newface": 6
     }
   ],
   "hiroshimacoco": [
@@ -671,6 +676,11 @@
       "date": "2026-09-21",
       "attendance": 22,
       "newface": 0
+    },
+    {
+      "date": "2026-09-22",
+      "attendance": 25,
+      "newface": 0
     }
   ],
   "idollovemachine": [
@@ -1006,6 +1016,11 @@
     },
     {
       "date": "2026-09-21",
+      "attendance": 13,
+      "newface": 0
+    },
+    {
+      "date": "2026-09-22",
       "attendance": 13,
       "newface": 0
     }
@@ -1345,6 +1360,11 @@
       "date": "2026-09-21",
       "attendance": 14,
       "newface": 0
+    },
+    {
+      "date": "2026-09-22",
+      "attendance": 25,
+      "newface": 2
     }
   ],
   "kagayaki": [
@@ -1682,6 +1702,11 @@
       "date": "2026-09-21",
       "attendance": 11,
       "newface": 0
+    },
+    {
+      "date": "2026-09-22",
+      "attendance": 8,
+      "newface": 0
     }
   ],
   "dousoukai": [
@@ -2017,6 +2042,11 @@
     },
     {
       "date": "2026-09-21",
+      "attendance": 16,
+      "newface": 0
+    },
+    {
+      "date": "2026-09-22",
       "attendance": 16,
       "newface": 0
     }
@@ -2356,6 +2386,11 @@
       "date": "2026-09-21",
       "attendance": 21,
       "newface": 0
+    },
+    {
+      "date": "2026-09-22",
+      "attendance": 17,
+      "newface": 2
     }
   ]
 }
