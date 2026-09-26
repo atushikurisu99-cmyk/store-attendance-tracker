@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-09-26",
-      "attendance": 25,
+      "attendance": 24,
       "newface": 2
     }
   ],
@@ -1081,7 +1081,7 @@
     },
     {
       "date": "2026-09-26",
-      "attendance": 14,
+      "attendance": 15,
       "newface": 0
     }
   ],
@@ -1443,8 +1443,8 @@
     },
     {
       "date": "2026-09-26",
-      "attendance": 19,
-      "newface": 2
+      "attendance": 20,
+      "newface": 0
     }
   ],
   "kagayaki": [
@@ -2529,8 +2529,8 @@
     },
     {
       "date": "2026-09-26",
-      "attendance": 26,
-      "newface": 2
+      "attendance": 25,
+      "newface": 0
     }
   ]
 }
