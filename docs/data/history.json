@@ -1157,7 +1157,7 @@
     {
       "date": "2026-10-01",
       "attendance": 10,
-      "newface": 0
+      "newface": 4
     }
   ],
   "rush47": [
@@ -1544,7 +1544,7 @@
     {
       "date": "2026-10-01",
       "attendance": 16,
-      "newface": 2
+      "newface": 4
     }
   ],
   "kagayaki": [
@@ -2704,7 +2704,7 @@
     },
     {
       "date": "2026-10-01",
-      "attendance": 18,
+      "attendance": 19,
       "newface": 0
     }
   ]
