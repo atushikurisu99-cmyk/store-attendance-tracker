@@ -398,7 +398,7 @@
     {
       "date": "2026-10-04",
       "attendance": 17,
-      "newface": 2
+      "newface": 0
     }
   ],
   "hiroshimacoco": [
@@ -1603,7 +1603,7 @@
     },
     {
       "date": "2026-10-04",
-      "attendance": 16,
+      "attendance": 15,
       "newface": 2
     }
   ],
