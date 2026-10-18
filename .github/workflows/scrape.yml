@@ -23,12 +23,6 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Random delay (0-5 min)
-        run: |
-          DELAY=$((RANDOM % 300))
-          echo "Waiting ${DELAY}s before starting..."
-          sleep "$DELAY"
-
       - name: Run scraper
         run: python scraper/scrape.py
 
