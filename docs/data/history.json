@@ -2023,8 +2023,8 @@
     },
     {
       "date": "2026-10-25",
-      "attendance": 14,
-      "newface": 6
+      "attendance": 13,
+      "newface": 2
     }
   ],
   "kagayaki": [
@@ -3545,7 +3545,7 @@
     {
       "date": "2026-10-25",
       "attendance": 13,
-      "newface": 2
+      "newface": 0
     }
   ]
 }
