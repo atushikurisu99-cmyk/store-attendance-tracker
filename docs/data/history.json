@@ -1089,7 +1089,7 @@
     },
     {
       "date": "2026-11-02",
-      "attendance": 25,
+      "attendance": 30,
       "newface": 0
     }
   ],
@@ -2183,8 +2183,8 @@
     },
     {
       "date": "2026-11-02",
-      "attendance": 22,
-      "newface": 6
+      "attendance": 21,
+      "newface": 2
     }
   ],
   "kagayaki": [
@@ -2730,7 +2730,7 @@
     },
     {
       "date": "2026-11-02",
-      "attendance": 12,
+      "attendance": 13,
       "newface": 0
     }
   ],
@@ -3277,7 +3277,7 @@
     },
     {
       "date": "2026-11-02",
-      "attendance": 14,
+      "attendance": 13,
       "newface": 0
     }
   ],
@@ -3824,7 +3824,7 @@
     },
     {
       "date": "2026-11-02",
-      "attendance": 14,
+      "attendance": 12,
       "newface": 0
     }
   ]
