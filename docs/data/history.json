@@ -548,7 +548,7 @@
     {
       "date": "2026-11-03",
       "attendance": 24,
-      "newface": 2
+      "newface": 4
     }
   ],
   "hiroshimacoco": [
@@ -2203,8 +2203,8 @@
     },
     {
       "date": "2026-11-03",
-      "attendance": 20,
-      "newface": 4
+      "attendance": 19,
+      "newface": 0
     }
   ],
   "kagayaki": [
@@ -2755,7 +2755,7 @@
     },
     {
       "date": "2026-11-03",
-      "attendance": 13,
+      "attendance": 14,
       "newface": 0
     }
   ],
@@ -3859,7 +3859,7 @@
     },
     {
       "date": "2026-11-03",
-      "attendance": 16,
+      "attendance": 17,
       "newface": 0
     }
   ]
