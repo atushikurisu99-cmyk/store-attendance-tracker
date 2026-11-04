@@ -549,6 +549,11 @@
       "date": "2026-11-03",
       "attendance": 24,
       "newface": 6
+    },
+    {
+      "date": "2026-11-04",
+      "attendance": 18,
+      "newface": 6
     }
   ],
   "hiroshimacoco": [
@@ -1100,6 +1105,11 @@
     {
       "date": "2026-11-03",
       "attendance": 33,
+      "newface": 0
+    },
+    {
+      "date": "2026-11-04",
+      "attendance": 30,
       "newface": 0
     }
   ],
@@ -1653,6 +1663,11 @@
       "date": "2026-11-03",
       "attendance": 12,
       "newface": 2
+    },
+    {
+      "date": "2026-11-04",
+      "attendance": 18,
+      "newface": 4
     }
   ],
   "rush47": [
@@ -2205,6 +2220,11 @@
       "date": "2026-11-03",
       "attendance": 19,
       "newface": 0
+    },
+    {
+      "date": "2026-11-04",
+      "attendance": 16,
+      "newface": 4
     }
   ],
   "kagayaki": [
@@ -2756,6 +2776,11 @@
     {
       "date": "2026-11-03",
       "attendance": 14,
+      "newface": 0
+    },
+    {
+      "date": "2026-11-04",
+      "attendance": 11,
       "newface": 0
     }
   ],
@@ -3309,6 +3334,11 @@
       "date": "2026-11-03",
       "attendance": 14,
       "newface": 0
+    },
+    {
+      "date": "2026-11-04",
+      "attendance": 14,
+      "newface": 0
     }
   ],
   "gokinnyjo": [
@@ -3860,6 +3890,11 @@
     {
       "date": "2026-11-03",
       "attendance": 17,
+      "newface": 4
+    },
+    {
+      "date": "2026-11-04",
+      "attendance": 14,
       "newface": 4
     }
   ]
