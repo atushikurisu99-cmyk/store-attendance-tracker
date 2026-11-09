@@ -1,12 +1,6 @@
 name: Scrape store attendance
 
-on:
-  schedule:
-    # cronはUTC基準。JSTの10:00 / 17:00 / 23:00 に相当する時刻を指定。
-    - cron: "0 1 * * *"   # JST 10:00
-    - cron: "0 8 * * *"   # JST 17:00
-    - cron: "0 14 * * *"  # JST 23:00
-  workflow_dispatch: {}   # 手動実行用(疎通確認時に使う)
+on: {}
 
 jobs:
   scrape:
